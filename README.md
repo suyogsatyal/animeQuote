@@ -40,8 +40,8 @@ Your folder will then have `package.json` file in it.
     npx tailwindcss init -p
     
 The `-p` adds the `postcss.config.js` file so you don't have to add it manually.
-
 <br/>
+
 **5)** Now you have to add the path in `tailwind.config.js`. This path indicates the files in your project where Tailwind will be implemented.
 Copy this code into the `tailwind.config.js` file.
 
