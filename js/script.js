@@ -10,11 +10,10 @@ let generateQuote = () =>{
   fetch("https://animechan.vercel.app/api/random")
           .then((response) => response.json())
           .then((quote) => {
-            main.classList.remove('hidden')
+            main.classList.remove('hidden');
             anime.innerHTML= `${quote.anime}`;
             quotes.innerHTML = `${quote.quote}`;
             character.innerHTML = `- ${quote.character}`;
-            generationSequence2();
           })
           .catch(()=>{
             console.error('Shit')
