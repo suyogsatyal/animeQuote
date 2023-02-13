@@ -1,5 +1,6 @@
 # Anime Quote Generator
 I made this project to learn about [Asynchronous JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous).
+<br>
 This project is hosted on [Netlify](https://animequoteapi.netlify.app/)
 
 **Tools used in this Project**
