@@ -4,24 +4,25 @@ let quotes = document.getElementById('quote')
 let character = document.getElementById('character')
 let button = document.getElementById('generate')
 
+let main = document.getElementById('main')
+
 let generateQuote = () =>{
   fetch("https://animechan.vercel.app/api/random")
           .then((response) => response.json())
           .then((quote) => {
-            console.log(`Anime = ${quote.anime}`)
-            anime.innerHTML= `Anime = ${quote.anime}`;
-            quotes.innerHTML = `Quote = ${quote.quote}`;
-            character.innerHTML = `Character = ${quote.character}`;
+            main.classList.remove('hidden')
+            anime.innerHTML= `${quote.anime}`;
+            quotes.innerHTML = `${quote.quote}`;
+            character.innerHTML = `- ${quote.character}`;
+            generationSequence2();
           })
           .catch(()=>{
             console.error('Shit')
-            anime.innerHTML = `Anime = 404`
-            quotes.innerHTML = `Quote = Maximum limit of 100 requests per hour met`
-            character.innerHTML = `Character = Server`
+            anime.innerHTML = `404`
+            quotes.innerHTML = `Maximum limit of 100 requests per hour met`
+            character.innerHTML = `Server`
           })
   
 }
 
-button.addEventListener('click', generateQuote)
-
-
+button.addEventListener('click', generateQuote);
