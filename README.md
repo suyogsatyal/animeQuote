@@ -22,17 +22,20 @@ Open the directory where you want to store your project in VS Code or similar co
     |--js
 	|--script.js
 ```
-<br>
+<br/>
+
 **2)** Go back to the base directory and open Terminal in VS code and enter the following command to install `npm`
 
     npm init -y
 
 Your folder will then have `package.json` file in it.
+
 <br>
 
 **3)** Then enter this command to install TailwindCSS, PostCSS(cli) and AutoPrefixer as devDependencies.
 
     npm install -D tailwindcss postcss-cli autoprefixer
+
 <br>
 
 **4)** Now, enter this command to create `tailwind.config.js` file.
@@ -40,6 +43,7 @@ Your folder will then have `package.json` file in it.
     npx tailwindcss init -p
     
 The `-p` adds the `postcss.config.js` file so you don't have to add it manually.
+
 <br/>
 
 **5)** Now you have to add the path in `tailwind.config.js`. This path indicates the files in your project where Tailwind will be implemented.
