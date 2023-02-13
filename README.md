@@ -18,9 +18,9 @@ Open the directory where you want to store your project in VS Code or similar co
 |--layout
     |--index.html
     |-- css
-        |-- style.css
+        |--style.css
     |--js
-	    |--script.js
+	|--script.js
 ```
 <br>
 **2)** Go back to the base directory and open Terminal in VS code and enter the following command to install `npm`
