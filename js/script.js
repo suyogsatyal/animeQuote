@@ -7,7 +7,6 @@ let button = document.getElementById('generate')
 let main = document.getElementById('main')
 
 let generateQuote = () =>{
-  console.log('working')
   fetch("https://animechan.vercel.app/api/random")
           .then((response) => response.json())
           .then((quote) => {
