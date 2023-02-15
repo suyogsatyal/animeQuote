@@ -27,4 +27,4 @@ let generateQuote = () =>{
 
 button.addEventListener('click', generateQuote);
 
-document.onkeydown = () =>{ if (event.keyCode == 13) {document.getElementById('button').click()}}
+document.onkeydown = () =>{ if (event.keyCode == 13) {document.getElementById('generate').click()}}
