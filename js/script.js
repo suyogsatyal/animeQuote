@@ -7,6 +7,7 @@ let button = document.getElementById('generate')
 let main = document.getElementById('main')
 
 let generateQuote = () =>{
+  console.log('working')
   fetch("https://animechan.vercel.app/api/random")
           .then((response) => response.json())
           .then((quote) => {
@@ -25,3 +26,5 @@ let generateQuote = () =>{
 }
 
 button.addEventListener('click', generateQuote);
+
+document.onkeydown = () =>{ if (event.keyCode == 13) {document.getElementById('button').click()}}
