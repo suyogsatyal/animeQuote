@@ -77,7 +77,7 @@ Now your folder structure will be as follows.
             |-- style.css
         |--js
     	    |--script.js
-In the newly created `tailwind.css` file, add the following code
+In the newly created `tailwind.css` file, add the following code. You can also add your custom CSS in this file.
 
     @tailwind base;
     @tailwind components;
